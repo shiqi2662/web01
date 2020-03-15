@@ -1,0 +1,9 @@
+test01_login_0____5 (case.test01.Testlogin) ... ok
+test01_login_1____5 (case.test01.Testlogin) ... ok
+test01_login_2____5 (case.test01.Testlogin) ... ok
+test01_login_3____5 (case.test01.Testlogin) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 65.295s
+
+OK

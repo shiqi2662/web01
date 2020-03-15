@@ -1,0 +1,96 @@
+test01_login_0____5 (case.test01.Testlogin) ... ok
+test01_login_1____5 (case.test01.Testlogin) ... ERROR
+test01_login_2____5 (case.test01.Testlogin) ... ERROR
+test01_login_3____5 (case.test01.Testlogin) ... ERROR
+
+======================================================================
+ERROR: test01_login_1____5 (case.test01.Testlogin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\study\python3.7\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\在家\web自动化\code02\case\test01.py", line 65, in test01_login
+    self.bug.page_bug()
+  File "F:\在家\web自动化\code02\page\page_qa.py", line 14, in page_bug
+    self.click_base(page.page_bug)
+  File "F:\在家\web自动化\code02\base\base_page.py", line 18, in click_base
+    self.find_base(loc).click()
+  File "F:\在家\web自动化\code02\base\base_page.py", line 14, in find_base
+    until(lambda d: d.find_element(*loc))
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "F:\在家\web自动化\code02\base\base_page.py", line 14, in <lambda>
+    until(lambda d: d.find_element(*loc))
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+
+
+======================================================================
+ERROR: test01_login_2____5 (case.test01.Testlogin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\study\python3.7\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\在家\web自动化\code02\case\test01.py", line 63, in test01_login
+    self.kt.page_my()
+  File "F:\在家\web自动化\code02\page\page_my.py", line 15, in page_my
+    self.click_base(page.page_ceshi)
+  File "F:\在家\web自动化\code02\base\base_page.py", line 18, in click_base
+    self.find_base(loc).click()
+  File "F:\在家\web自动化\code02\base\base_page.py", line 14, in find_base
+    until(lambda d: d.find_element(*loc))
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "F:\在家\web自动化\code02\base\base_page.py", line 14, in <lambda>
+    until(lambda d: d.find_element(*loc))
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+
+
+======================================================================
+ERROR: test01_login_3____5 (case.test01.Testlogin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\study\python3.7\lib\site-packages\parameterized\parameterized.py", line 518, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\在家\web自动化\code02\case\test01.py", line 63, in test01_login
+    self.kt.page_my()
+  File "F:\在家\web自动化\code02\page\page_my.py", line 15, in page_my
+    self.click_base(page.page_ceshi)
+  File "F:\在家\web自动化\code02\base\base_page.py", line 18, in click_base
+    self.find_base(loc).click()
+  File "F:\在家\web自动化\code02\base\base_page.py", line 14, in find_base
+    until(lambda d: d.find_element(*loc))
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "F:\在家\web自动化\code02\base\base_page.py", line 14, in <lambda>
+    until(lambda d: d.find_element(*loc))
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "F:\study\python3.7\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 35.743s
+
+FAILED (errors=3)
